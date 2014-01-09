@@ -10,7 +10,7 @@ alias -- -="cd -"
 alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
+alias p="cd ~/Projects"
 alias g="git"
 alias h="history"
 alias j="jobs"
@@ -150,5 +150,8 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
 
-# Faster npm for europeans
-command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu"
+#for https://github.com/dronir/SpotifyControl
+alias spotify="osascript /path/to/SpotifyControl.scpt"
+
+#for https://github.com/jeroenbegyn/VLCControl
+alias vlc="osascript /path/to/VLCControl.scpt"

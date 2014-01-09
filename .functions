@@ -311,3 +311,8 @@ function np() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX
 }
+
+# to allow for system wide pip
+function syspip() {
+   PIP_REQUIRE_VIRTUALENV="" pip "$@"
+}
