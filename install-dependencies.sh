@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+git pull origin master
 # link the dotfiles
 ln -s $PWD ~
 
