@@ -11,6 +11,7 @@ brew cask alfred link
 installcask mysql-workbench
 installcask mongohub
 installcask adium
+installcask iterm2
 installcask dropbox
 installcask google-chrome
 installcask imageoptim
