@@ -27,7 +27,7 @@
 	"remember_open_files": false,
 	"tab_size": 4,
 	"translate_tabs_to_spaces": true,
-	"word_wrap": true
+	"word_wrap": true,
 	"always_show_minimap_viewport": true,
 	"close_windows_when_empty": true,
 	"ensure_newline_at_eof_on_save": true,
