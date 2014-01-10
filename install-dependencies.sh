@@ -1,8 +1,4 @@
 #!/usr/bin/env bash
-# TODO change this to not use git
-#mkdir ~/Projects
-#cd ~/Projects
-#curl -#L https://github.com/bll-z/dotfiles/tarball/master | tar -xzv --strip-components 1
 # link the dotfiles
 ln -s $PWD ~
 
@@ -31,6 +27,7 @@ chsh -s /usr/local/bin/fish
 
 # install virtual environment
 pip install virtualenv
+pip install pylint
 
 # Create needed directories
 mkdir -p $TOOLS_HOME/lib/fish
