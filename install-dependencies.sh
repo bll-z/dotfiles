@@ -31,7 +31,7 @@ syspip install virtualenv
 syspip install pylint
 
 # Create needed directories
-#mkdir -p $TOOLS_HOME/lib/fish
+mkdir $TOOLS_HOME/lib
 mkdir -p $HOME/.pip/{cache,wheels} $VIRTUALENVS_HOME
 
 # Spotify Control Script

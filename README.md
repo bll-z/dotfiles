@@ -2,10 +2,12 @@
 
 ## Installation
 #open terminal on fresh mavericks install
-mkdir ~/Projects
-cd ~/Projects
-curl -#L https://github.com/bll-z/dotfiles/tarball/master | tar -xzv --strip-components 1
-bash install-dependencies.sh
+#mkdir ~/Projects
+#cd ~/Projects
+#mkdir dotfiles
+#cd dotfiles
+#curl -#L https://github.com/bll-z/dotfiles/tarball/master | tar -xzv --strip-components 1
+#bash install-dependencies.sh
 
 ### Using Git and the bootstrap script
 
