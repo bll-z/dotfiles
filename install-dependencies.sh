@@ -7,6 +7,9 @@ ln -s $PWD ~
 TOOLS_HOME=$HOME/Tools
 VIRTUALENVS_HOME=$HOME/Virtualenvs
 
+#create the bash profile
+touch ~/.bash_profile
+
 #unhide library
 chflags nohidden $HOME/Library
 

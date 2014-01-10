@@ -29,7 +29,7 @@ install python3 --with-brewed-openssl
 # install mysql
 install mysql
 # install mssql
-install freetds --with-unixodbc # 0.91
+install freetds --with-unixodbc #0.91
 # install mongo
 install mongo
 install elasticsearch
