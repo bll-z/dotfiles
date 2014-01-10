@@ -81,6 +81,3 @@ ln -s ~/dotfiles/db_files/mssql/odbc.ini /usr/local/etc
 ln -s ~/dotfiles/db_files/mssql/odbc.ini /usr/local/Cellar/unixodbc/2.3.2/etc/
 ln -s ~/dotfiles/db_files/mssql/odbcini.ini /usr/local/etc
 ln -s ~/dotfiles/db_files/mssql/odbcini.ini /usr/local/Cellar/unixodbc/2.3.2/etc/
-cd
-echo running .osx, this will terminate the script
-./.osx
