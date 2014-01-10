@@ -21,21 +21,18 @@ brew install git
 # run the bootstrap
 ./bootstrap.sh
 
-# set fish to default terminal
-echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
-chsh -s /usr/local/bin/fish
+# set bash4 to default terminal
+echo "/usr/local/bin/bash" | sudo tee -a /etc/shells
+chsh -s /usr/local/bin/bash
 
 # install virtual environment
 pip install virtualenv
 pip install pylint
 
 # Create needed directories
-mkdir -p $TOOLS_HOME/lib/fish
+#mkdir -p $TOOLS_HOME/lib/fish
 mkdir -p $HOME/.pip/{cache,wheels} $VIRTUALENVS_HOME
 
-# add some tools
-# virtualenv wrapper
-git clone git://github.com/justinmayer/virtualfish.git $TOOLS_HOME/lib/fish/virtualfish
 # Spotify Control Script
 #.alias
 cd $TOOLS_HOME/lib
