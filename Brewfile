@@ -35,6 +35,7 @@ install postgres
 # Install other useful binaries
 install ack
 install pigz
+install zsh
 install rename
 install tree
 install webkit2png

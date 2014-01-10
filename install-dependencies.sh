@@ -21,9 +21,10 @@ brew install git
 # run the bootstrap
 ./bootstrap.sh
 
-# set bash4 to default terminal
+# set bash4 and zsh to default terminal
 echo "/usr/local/bin/bash" | sudo tee -a /etc/shells
-chsh -s /usr/local/bin/bash
+echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
+chsh -s /usr/local/bin/zsh
 
 # install virtual environment
 pip install virtualenv

@@ -6,16 +6,6 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 done
 unset file
 
-# python variables 
-export PIP_REQUIRE_VIRTUALENV="true"
-export PIP_USE_WHEEL="true"
-export PIP_WHEEL_DIR="$HOME/.pip/wheels"
-export PIP_FIND_LINKS="$HOME/.pip/wheels"
-export PIP_DOWNLOAD_CACHE="$HOME/.pip/cache"
-export PIP_TIMEOUT=15
-export PIP_ALLOW_ALL_EXTERNAL="false"
-export PIP_NO_ALLOW_INSECURE="false"
-
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
 
