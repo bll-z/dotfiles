@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# TODO change this to not use git
 git pull origin master
 # link the dotfiles
 ln -s $PWD ~
@@ -68,6 +69,7 @@ initdb -D /usr/local/pgsql/data
 postgres -D /usr/local/var/postgres
 ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 # MsSql - remove originals and symlink included
+brew install freetds --with-unixodbc #0.91
 rm -f /usr/local/Cellar/freetds/0.91/etc/freetds.conf
 rm -f /usr/local/Cellar/unixodbc/2.3.1/etc/odbc.ini
 rm -f /usr/local/Cellar/unixodbc/2.3.1/etc/odbcini.ini

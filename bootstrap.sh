@@ -6,9 +6,9 @@ function doIt() {
 		--exclude "README.md" --exclude "LICENSE-MIT.txt" \
         --exclude "install-dependencies.sh" -av --no-perms . ~
     source ~/.bash_profile
-    ./~/.osx
+    ./.osx
     brew bundle ~/Brewfile
-    ./~/.cask
+    ./.cask
 	source ~/.bash_profile
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then

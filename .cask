@@ -8,6 +8,8 @@ function installcask() {
 
 installcask alfred
 brew cask alfred link
+installcask mysql-workbench
+installcask mongohub
 installcask adium
 installcask dropbox
 installcask google-chrome
