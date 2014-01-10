@@ -27,8 +27,8 @@ echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/zsh
 
 # install virtual environment
-pip install virtualenv
-pip install pylint
+syspip install virtualenv
+syspip install pylint
 
 # Create needed directories
 #mkdir -p $TOOLS_HOME/lib/fish
