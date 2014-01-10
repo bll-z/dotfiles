@@ -16,7 +16,6 @@ installcask iterm2
 installcask dropbox
 installcask google-chrome
 installcask imageoptim
-installcask fish
 installcask firefox
 installcask macvim
 installcask sublime-text

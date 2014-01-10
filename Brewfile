@@ -39,7 +39,7 @@ install zsh
 install rename
 install tree
 install webkit2png
-
+install fish
 
 # Remove outdated versions from the cellar
 cleanup
