@@ -53,7 +53,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 # init the path
-source .path
+source ~/.path
+
 # add to the path in the format
 # export PATH = "path/to/bin:$PATH"
 

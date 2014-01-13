@@ -2,18 +2,25 @@
 
 ## Installation
 
-save the following in the file ~/init_script.sh:
+#save the following in the file ~/init_script.sh:
 
 xcode-select --install
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-brew install git
-mkdir ~/Projects
-cd ~/Projects
-git clone https://github.com/bll-z/dotfiles.git
-cd dotfiles
-bash install_dependencies.sh
 
-run the command: bash ~/init_script.sh
+ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+
+brew install git
+
+mkdir ~/Projects
+
+cd ~/Projects
+
+git clone https://github.com/bll-z/dotfiles.git
+
+cd dotfiles
+
+bash install-dependencies.sh
+
+#run the command: bash ~/init_script.sh
 
 
 ### Using Git and the bootstrap script
