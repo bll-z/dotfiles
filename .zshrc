@@ -1,3 +1,5 @@
+# This is the file to put all your local settings in
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -8,7 +10,7 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
+# alias zshconfig=" sp"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Set to this to use case-sensitive completion
@@ -52,7 +54,10 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 # init the path
 source .path
-# export MANPATH="/usr/local/man:$MANPATH"
+# add to the path in the format
+# export PATH = "path/to/bin:$PATH"
+
+export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then

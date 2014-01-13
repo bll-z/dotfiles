@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-# link the dotfiles
-ln -s $PWD ~
 
 # set some variables
 TOOLS_HOME=$HOME/Tools
@@ -12,12 +10,10 @@ touch ~/.bash_profile
 #unhide library
 chflags nohidden $HOME/Library
 
-# install xcode command line tools
-xcode-select --install
-
-# homebrew
-ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-brew install git
+# homebrew - should already be done
+#ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+#brew install git
+# copy the files 
 # run the bootstrap
 ./bootstrap.sh
 
@@ -25,10 +21,6 @@ brew install git
 echo "/usr/local/bin/bash" | sudo tee -a /etc/shells
 echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/zsh
-
-# install virtual environment
-syspip install virtualenv
-syspip install pylint
 
 # Create needed directories
 mkdir $TOOLS_HOME/lib
@@ -81,3 +73,6 @@ ln -s ~/dotfiles/db_files/mssql/odbc.ini /usr/local/etc
 ln -s ~/dotfiles/db_files/mssql/odbc.ini /usr/local/Cellar/unixodbc/2.3.2/etc/
 ln -s ~/dotfiles/db_files/mssql/odbcini.ini /usr/local/etc
 ln -s ~/dotfiles/db_files/mssql/odbcini.ini /usr/local/Cellar/unixodbc/2.3.2/etc/
+
+# get rid of the init script
+rm -f ~/init_script.sh

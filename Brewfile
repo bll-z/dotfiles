@@ -40,6 +40,7 @@ install rename
 install tree
 install webkit2png
 install fish
+install git
 
 # Remove outdated versions from the cellar
 cleanup

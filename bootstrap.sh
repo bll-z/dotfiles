@@ -2,12 +2,24 @@
 cd "$(dirname "${BASH_SOURCE}")"
 git pull origin master
 function doIt() {
-	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
-		--exclude "README.md" --exclude "LICENSE-MIT.txt" \
-        --exclude "install-dependencies.sh" -av --no-perms . ~
+    if [ -e ~/.zshrc ]
+        then
+        echo 'ignoring user files'
+        rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
+            --exclude "README.md" --exclude "LICENSE-MIT.txt" \
+            --exclude "install-dependencies.sh" \
+            --exclude ".zshrc" \
+            --exclude ".osx" -av --no-perms . ~
+        else
+        echo 'fresh install'
+        rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
+            --exclude "README.md" --exclude "LICENSE-MIT.txt" \
+            --exclude "install-dependencies.sh" -av --no-perms . ~
+    fi
     source ~/.bash_profile
     brew bundle ~/Brewfile
     ./.cask
+    syspip install -r  requirements.txt
 	source ~/.bash_profile
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then

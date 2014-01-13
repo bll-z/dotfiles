@@ -158,3 +158,16 @@ alias spotify="osascript /path/to/SpotifyControl.scpt"
 
 #for https://github.com/jeroenbegyn/VLCControl
 alias vlc="osascript /path/to/VLCControl.scpt"
+
+#django aliases
+alias py="python" > /dev/null
+alias py3="python3" > /dev/null
+alias pm="python manage.py" > /dev/null
+alias bd="bin/django" > /dev/null
+alias pm.s="python manage.py syncdb" > /dev/null
+alias pm.m="python manage.py migrate" > /dev/null
+alias pm.r="python manage.py runserver" > /dev/null
+alias bd.s="bd syncdb" > /dev/null
+alias bd.m="bd migrate" > /dev/null
+alias bd.r="bd runserver" > /dev/null
+alias bb="bin/buildout"
