@@ -15,7 +15,6 @@ installcask caffeine
 installcask iterm2
 installcask dropbox
 installcask google-chrome
-installcask imageoptim
 installcask firefox
 installcask macvim
 installcask sublime-text

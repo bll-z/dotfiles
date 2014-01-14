@@ -67,12 +67,13 @@ rm -f /usr/local/Cellar/unixodbc/2.3.2/etc/odbc.ini
 rm -f /usr/local/Cellar/unixodbc/2.3.2/etc/odbcini.ini
 rm -f /usr/local/etc/odbc.ini
 rm -f /usr/local/etc/odbcini.ini
-ln -s ~/dotfiles/db_files/mssql/freetds.conf /usr/local/Cellar/freetds/0.91/etc
-ln -s ~/dotfiles/db_files/mssql/freetds.conf /usr/local/etc
-ln -s ~/dotfiles/db_files/mssql/odbc.ini /usr/local/etc
-ln -s ~/dotfiles/db_files/mssql/odbc.ini /usr/local/Cellar/unixodbc/2.3.2/etc/
-ln -s ~/dotfiles/db_files/mssql/odbcini.ini /usr/local/etc
-ln -s ~/dotfiles/db_files/mssql/odbcini.ini /usr/local/Cellar/unixodbc/2.3.2/etc/
+rm -f /usr/local/etc/freetds
+ln -s ~/db_files/mssql/freetds.conf /usr/local/Cellar/freetds/0.91/etc
+ln -s ~/db_files/mssql/freetds.conf /usr/local/etc
+ln -s ~/db_files/mssql/odbc.ini /usr/local/etc
+ln -s ~/db_files/mssql/odbc.ini /usr/local/Cellar/unixodbc/2.3.2/etc/
+ln -s ~/db_files/mssql/odbcini.ini /usr/local/etc
+ln -s ~/db_files/mssql/odbcini.ini /usr/local/Cellar/unixodbc/2.3.2/etc/
 
 # get rid of the init script
 rm -f ~/init_script.sh
