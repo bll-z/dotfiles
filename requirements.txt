@@ -1,3 +1,2 @@
-virtualenv
+virtualenvwrapper
 pylint
-mysql-python
