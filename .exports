@@ -2,7 +2,9 @@
 export EDITOR="vim"
 # set variable for virtualenvwrapper
 export WORKON_HOME="~/Virtualenvs"
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
 source /usr/local/bin/virtualenvwrapper.sh
+
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE

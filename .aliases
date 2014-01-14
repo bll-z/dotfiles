@@ -171,3 +171,7 @@ alias bd.s="bd syncdb" > /dev/null
 alias bd.m="bd migrate" > /dev/null
 alias bd.r="bd runserver" > /dev/null
 alias bb="bin/buildout"
+
+# virtualenv aliases
+alias cd="venv_cd"
+alias mkv="mkvirtualenv"
