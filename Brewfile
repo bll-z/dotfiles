@@ -1,6 +1,7 @@
 # Make sure we’re using the latest Homebrew
 update
 
+install Caskroom/cask/java
 # Upgrade any already-installed formulae
 upgrade
 
@@ -33,14 +34,12 @@ install mongo
 install elasticsearch
 install postgres
 # Install other useful binaries
-install ack
-install pigz
 install zsh
 install rename
 install tree
 install webkit2png
-install fish
 install git
+install ruby
 
 # Remove outdated versions from the cellar
 cleanup

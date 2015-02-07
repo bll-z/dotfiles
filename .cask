@@ -1,24 +1,22 @@
 # Install native apps
-brew tap phinze/homebrew-cask
-brew install brew-cask
+brew install caskroom/cask/brew-cask --update
 
 function installcask() {
 	brew cask install "${@}" 2> /dev/null
 }
 
+installcask slack
 installcask alfred
-installcask github
+installcask box-sync
+installcask box-edit
 installcask mysql-workbench
 installcask mongohub
 installcask adium
 installcask caffeine
 installcask iterm2
-installcask dropbox
+installcask google-chrome
 installcask google-chrome
 installcask firefox
-installcask macvim
 installcask sublime-text
 installcask the-unarchiver
-installcask vlc
-installcask spotify
 brew cask alfred link

@@ -1,2 +1,5 @@
+virtualenv
 virtualenvwrapper
 pylint
+setuptools>=8.0.2
+

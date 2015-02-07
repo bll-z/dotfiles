@@ -17,9 +17,12 @@ function doIt() {
             --exclude "install-dependencies.sh" -av --no-perms . ~
     fi
     source ~/.bash_profile
+    brew tap homebrew/boneyard
     brew bundle ~/Brewfile
     ./.cask
     syspip install -r  requirements.txt
+    gem install bundler
+    gem install compass
 	source ~/.bash_profile
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then

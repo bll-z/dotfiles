@@ -135,11 +135,6 @@ done
 # Make Grunt print stack traces by default
 command -v grunt > /dev/null && alias grunt="grunt --stack"
 
-# Stuff I never really use but cannot delete either because of http://xkcd.com/530/
-alias stfu="osascript -e 'set volume output muted true'"
-alias pumpitup="osascript -e 'set volume 7'"
-alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
-
 # Kill all the tabs in Chrome to free up memory
 # [C] explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description
 alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
@@ -153,25 +148,22 @@ alias reload="exec $SHELL -l"
 # Faster npm for europeans
 command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.eu"
 
-#for https://github.com/dronir/SpotifyControl
-alias spotify="osascript /path/to/SpotifyControl.scpt"
-
-#for https://github.com/jeroenbegyn/VLCControl
-alias vlc="osascript /path/to/VLCControl.scpt"
-
 #django aliases
 alias py="python" > /dev/null
 alias py3="python3" > /dev/null
 alias pm="python manage.py" > /dev/null
 alias bd="bin/django" > /dev/null
 alias pm.s="python manage.py syncdb" > /dev/null
-alias pm.m="python manage.py migrate" > /dev/null
+alias pm.m="python manage.py merge" > /dev/null
 alias pm.r="python manage.py runserver" > /dev/null
 alias bd.s="bd syncdb" > /dev/null
-alias bd.m="bd migrate" > /dev/null
+alias bd.m="bd merge" > /dev/null
 alias bd.r="bd runserver" > /dev/null
 alias bb="bin/buildout"
+alias bg="bin/grunt"
+alias bg.w="bin/grunt watch"
+alias bf.d="bin/fab deploy_to_web"
+alias bd.t="bin/django test"
 
 # virtualenv aliases
-alias cd="venv_cd"
 alias mkv="mkvirtualenv"
