@@ -1,45 +1,40 @@
-# Make sure we’re using the latest Homebrew
-update
+tap 'caskroom/cask'
+cask 'java'
+brew 'coreutils'
+brew 'findutils'
+brew 'bash'
+brew 'wget', args: ['enable-iri']
+brew 'vim', args: ['override-system-vi']
+tap 'homebrew/dupes'
+brew 'homebrew/dupes/grep'
+tap 'josegonzalez/homebrew-php'
+brew 'php55'
+brew 'python', args: ['with-brewed-openssl']
+brew 'python3', args: ['with-brewed-openssl']
+brew 'mysql'
+brew 'mongo'
+brew 'elasticsearch'
+brew 'postgres'
+brew 'zsh'
+brew 'rename'
+brew 'tree'
+brew 'webkit2png'
+brew 'git'
+brew 'ruby'
 
-install Caskroom/cask/java
-# Upgrade any already-installed formulae
-upgrade
 
-# Install GNU core utilities (those that come with OS X are outdated)
-# Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
-install coreutils
-# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
-install findutils
-# Install Bash 4
-install bash
-
-# Install wget with IRI support
-install wget --enable-iri
-
-# Install more recent versions of some OS X tools
-install vim --override-system-vi
-tap homebrew/dupes
-install homebrew/dupes/grep
-tap josegonzalez/homebrew-php
-install php55
-
-# install a few python essentials
-install python --with-brewed-openssl
-install python3 --with-brewed-openssl
-
-# install mysql
-install mysql
-# install mongo
-install mongo
-install elasticsearch
-install postgres
-# Install other useful binaries
-install zsh
-install rename
-install tree
-install webkit2png
-install git
-install ruby
-
+cask 'slack'
+cask 'alfred'
+cask 'box-sync'
+cask 'box-edit'
+cask 'mysql-workbench'
+cask 'mongohub'
+cask 'adium'
+cask 'caffeine'
+cask 'iterm2'
+cask 'google-chrome'
+cask 'google-chrome'
+cask 'firefox'
+cask 'sublime-text'
+cask 'the-unarchiver'
 # Remove outdated versions from the cellar
-cleanup

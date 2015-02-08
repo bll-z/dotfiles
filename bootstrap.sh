@@ -17,9 +17,12 @@ function doIt() {
             --exclude "install-dependencies.sh" -av --no-perms . ~
     fi
     source ~/.bash_profile
-    brew tap homebrew/boneyard
-    brew bundle ~/Brewfile
-    ./.cask
+    brew tap Homebrew/brewdler
+    brew update
+    brew brewdle
+    brew upgrade
+    brew cask alfred link
+    brew cleanup
     syspip install -r  requirements.txt
     gem install bundler
     gem install compass
