@@ -35,6 +35,7 @@ cask 'iterm2'
 cask 'google-chrome'
 cask 'google-chrome'
 cask 'firefox'
-cask 'sublime-text'
+tap 'caskroom/versions'
+cask 'sublime-text3'
 cask 'the-unarchiver'
 # Remove outdated versions from the cellar
