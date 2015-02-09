@@ -23,6 +23,8 @@ function doIt() {
     brew upgrade
     brew cask alfred link
     brew cleanup
+    syspip install --upgrade pip
+    syspip install --upgrade setuptools
     syspip install -r  requirements.txt
     gem install bundler
     gem install compass
