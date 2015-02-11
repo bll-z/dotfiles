@@ -1,4 +1,5 @@
 tap 'caskroom/cask'
+brew 'caskroom/cask/brew-cask'
 cask 'java'
 brew 'coreutils'
 brew 'findutils'
