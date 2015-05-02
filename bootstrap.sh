@@ -26,9 +26,12 @@ function doIt() {
     syspip install --upgrade pip
     syspip install --upgrade setuptools
     syspip install -r  requirements.txt
+    npm install -g bower
+    npm install -g protractor
+    npm install -g karma
     gem install bundler
     gem install compass
-	source ~/.bash_profile
+    source ~/.bash_profile
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
 	doIt
