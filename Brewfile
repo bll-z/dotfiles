@@ -17,6 +17,8 @@ brew 'rename'
 brew 'tree'
 brew 'git'
 brew 'ruby'
+brew 'node'
+brew 'npm'
 
 tap 'caskroom/versions'
 cask 'alfred'
