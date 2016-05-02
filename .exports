@@ -30,8 +30,6 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # python variables
 export PIP_REQUIRE_VIRTUALENV="true"
-export PIP_DOWNLOAD_CACHE="$HOME/.pip/cache"
-export PIP_TIMEOUT=15
 export PIP_ALLOW_ALL_EXTERNAL="false"
 export PIP_NO_ALLOW_INSECURE="false"
 
@@ -39,3 +37,7 @@ export CFLAGS=-Qunused-arguments;
 export CPPFLAGS=-Qunused-arguments;
 export ARCHFLAGS="-arch x86_64"
 export MANPATH="/usr/local/man:$MANPATH"
+export APP_ENV="dev"
+
+# Android SDK
+export ANDROID_HOME="/usr/local/opt/android-sdk"
