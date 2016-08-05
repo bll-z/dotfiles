@@ -1,2 +1,1 @@
-export PATH="/usr/local/bin:/usr/local/Cellar/ruby/2.1.0/bin:/usr/local/sbin:$HOME/bin:/usr/bin:/usr/local/mysql/bin:~/dev/git-friendly:$PATH"
-
+export PATH="/usr/local/bin:/usr/local/sbin:$HOME/bin:/usr/bin:$PATH"

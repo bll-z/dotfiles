@@ -1,9 +1,10 @@
 # Make vim the default editor
 export EDITOR="vim"
+
 # set variable for virtualenvwrapper
-export WORKON_HOME="~/Virtualenvs"
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
-source /usr/local/bin/virtualenvwrapper.sh
+# export WORKON_HOME="~/Virtualenvs"
+# export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
+# source /usr/local/bin/virtualenvwrapper.sh
 
 # Larger bash history (allow 32³ entries; default is 500)
 export HISTSIZE=32768
@@ -38,6 +39,3 @@ export CPPFLAGS=-Qunused-arguments;
 export ARCHFLAGS="-arch x86_64"
 export MANPATH="/usr/local/man:$MANPATH"
 export APP_ENV="dev"
-
-# Android SDK
-export ANDROID_HOME="/usr/local/opt/android-sdk"
